@@ -1,23 +1,52 @@
 :root {
-    --browser-size: 1500px
+    --browser-size: 1500px;
+    --header-color: #e17055;
+    --accent-color: #00b4b1;
+    --accent-color-glow: #00cec9;
+    --background-gradient-light: #dfe6e9;
+    --background-gradient-dark: #b2bec3;
 }
 
 body  {
     font-family: "Inconsolata", monospace, sans-serif;
     max-width: var(--browser-size);
+    background-image: linear-gradient(var(--background-gradient-light), var(--background-gradient-dark));
+}  
+
+a{
+    color: var(--accent-color);
+    text-decoration: none;
 }
+
+/* Glowing link hover*/
+a:hover {
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+    animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+      text-shadow: 0 0 10px var(--accent-color-glow);
+    }
+    to {
+      text-shadow: 0 0 20px var(--accent-color-glow);
+    }
+  }
 
 .nav-bar {
     display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    padding: 20px;
+    padding-left: 20px;
     width 100%;
 }
 
 .nav-bar h1 {
     text-align: left;
+    font-size: 200%;
+    margin-bottom: 6px;
 }
 
 .nav-bar ul {
@@ -26,11 +55,14 @@ body  {
 
 .nav-bar ul li {
     display: inline;
-    padding: 15px;
+    padding-left: 30px;
+    font-size: 130%;
+    font-weight: bold;
+    color: var(--accent-color);
 }
 
 .nav-bar h1 {
-
+    color: var(--header-color);
 }
 
 .nav-bar links{
@@ -44,19 +76,25 @@ body  {
 }
 
 .hero-img img {
-    padding: 20px;
+    padding-left: 20px;
     max-width: var(--browser-size);
     height: auto;
-
 }
 
+
 .hero-txt {
+    /*Set hero text box inside of hero image*/
     position: absolute;
     top: 80%;
-    left: 50%;
+    left: 38%;
     transform: translate(-50%, -50%);
     display: inline;
     background-color: whitesmoke;
+}
+
+.hero-txt h1 {
+    margin-bottom: 15px;
+    font-size: 200%;
 }
 
 .hero-txt h1, p {
