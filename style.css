@@ -27,12 +27,12 @@ a:hover {
 
 @-webkit-keyframes glow {
     from {
-      text-shadow: 0 0 10px var(--accent-color-glow);
+    text-shadow: 0 0 10px var(--accent-color-glow);
     }
     to {
-      text-shadow: 0 0 20px var(--accent-color-glow);
+    text-shadow: 0 0 20px var(--accent-color-glow);
     }
-  }
+}
 
 .nav-bar {
     display: flex;
@@ -99,4 +99,26 @@ a:hover {
 
 .hero-txt h1, p {
     text-align: left;
+}
+
+.section-header {
+    display: inline-flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.section-header h2 {
+    font-size: 180%;
+    color: var(--header-color);
+    border-bottom: 1px solid var(--header-color);
+    margin-left: 50%;
+}
+
+.section-header h3 {
+    vertical-align: bottom;
+    color: var(--accent-color);
+    font-style: italic;
+    font-size: 80%;
 }
