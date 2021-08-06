@@ -1,0 +1,64 @@
+:root {
+    --browser-size: 1500px
+}
+
+body  {
+    font-family: "Inconsolata", monospace, sans-serif;
+    max-width: var(--browser-size);
+}
+
+.nav-bar {
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 20px;
+    width 100%;
+}
+
+.nav-bar h1 {
+    text-align: left;
+}
+
+.nav-bar ul {
+    list-style-type: none;
+}
+
+.nav-bar ul li {
+    display: inline;
+    padding: 15px;
+}
+
+.nav-bar h1 {
+
+}
+
+.nav-bar links{
+
+}
+
+/* Container holding imaage and text overlaid */
+.hero-container {
+    position: relative;
+    text-align: center;
+}
+
+.hero-img img {
+    padding: 20px;
+    max-width: var(--browser-size);
+    height: auto;
+
+}
+
+.hero-txt {
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline;
+    background-color: whitesmoke;
+}
+
+.hero-txt h1, p {
+    text-align: left;
+}
