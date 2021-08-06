@@ -85,7 +85,7 @@ a:hover {
 .hero-txt {
     /*Set hero text box inside of hero image*/
     position: absolute;
-    top: 80%;
+    top: 70%;
     left: 38%;
     transform: translate(-50%, -50%);
     display: inline;
