@@ -12,6 +12,7 @@
 body  {
     font-family: "Inconsolata", monospace, sans-serif;
     width: var(--browser-size);
+    min-width: 1000px;
     max-width: 1200px;
     background-image: linear-gradient(var(--background-gradient-light), var(--background-gradient-dark));
     -webkit-text-stroke-width: 1px;
@@ -70,28 +71,28 @@ a:hover {
     color: var(--header-color);
 }
 
-.nav-bar links{
-
-}
-
 /* Container holding imaage and text overlaid */
 .hero-container {
     position: relative;
     text-align: center;
+
 }
 
 .hero-img img {
     max-width: 95%;
-    height: auto;
 }
 
 
 .hero-txt {
     /*Set hero text box inside of hero image*/
     position: absolute;
-    top: 70%;
-    left: 40%;
-    transform: translate(-50%, -50%);
+    width: 65%;
+    height: 65%;
+    margin: 0px auto;
+    top: 20%;
+    left: 0;
+    right: 0;
+    bottom: 0;
     display: inline;
     background-color: whitesmoke;
     padding: 10px;
@@ -196,7 +197,7 @@ a:hover {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    width: 70%;
+    width: 90%;
     margin-bottom: 20px;
     padding-left: 0px;
 }
@@ -211,3 +212,61 @@ a:hover {
     background-color: #b2bec38e;
 }
 
+/* Mobile*/
+@media (min-width: 320px) and (max-width: 500px) {
+    body {
+        min-width: 100%;
+        max-width: 100%;
+    }
+    .nav-bar { 
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+    }
+    .nav-bar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .hero-container {
+        margin-bottom: 530px;
+    }
+
+    .hero-txt {
+        position: absolute;
+        width: 65%;
+        height: 650px;
+        margin: 0px auto;
+        top: 30%;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        display: inline;
+        background-color: whitesmoke;
+        border-style: solid;
+        border-color: var(--accent-color);
+        border-width: 2px;
+        padding: 10px;
+    }
+    
+    .section-header {
+        display: inline-flex;
+        -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+        justify-content: left;
+        width: 100%;
+    }
+
+    .section-header h2 {
+        margin-left: 30%;
+    }
+
+    .section-header a {
+        display: none;
+    }
+
+    .project, .project-card-type {
+        display: block;
+    }
+}
