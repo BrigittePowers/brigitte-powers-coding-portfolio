@@ -252,7 +252,7 @@ a:hover {
     .hero-txt {
         position: absolute;
         width: 65%;
-        height: 650px;
+        height: 300%;
         margin: 0px auto;
         top: 30%;
         left: 0;
@@ -267,6 +267,7 @@ a:hover {
     }
     
     .section-header {
+        padding-top: 30px;
         display: inline-flex;
         -webkit-box-pack: justify;
         -ms-flex-pack: justify;
