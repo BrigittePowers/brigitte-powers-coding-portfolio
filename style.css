@@ -1,5 +1,4 @@
 :root {
-    --browser-size: 95%;
     --header-color: #e17055;
     --accent-color: #00b4b1;
     --accent-color-glow: #00cec9;
@@ -7,17 +6,21 @@
     --background-gradient-dark: #b2bec3;
     --project-bg-color-left: #ffeaa7;
     --project-bg-color-right: #fab1a0;
+    --box-bg: whitesmoke;
 }
 
 body  {
     font-family: "Inconsolata", monospace, sans-serif;
-    width: var(--browser-size);
-    min-width: 1000px;
     max-width: 1200px;
     background-image: linear-gradient(var(--background-gradient-light), var(--background-gradient-dark));
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.25);
+    margin: 0px;
 }  
+
+.wrapper {
+    padding: 10px;
+}
 
 a{
     color: var(--accent-color);
@@ -46,7 +49,19 @@ a:hover {
     -ms-flex-pack: justify;
     justify-content: space-between;
     padding-left: 20px;
-    width: 95%;
+}
+
+@media (max-width: 640px) {
+    .nav-bar { 
+        display: flex;
+        flex: wrap;
+        flex-direction: column;
+    }
+    .nav-bar-links {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
 }
 
 .nav-bar h1 {
@@ -71,33 +86,41 @@ a:hover {
     color: var(--header-color);
 }
 
-/* Container holding imaage and text overlaid */
-.hero-container {
-    position: relative;
-    text-align: center;
-
+.hero-img {
+    background-image: url("./assets/bannerimage.jpg");
+    display: flex;
+    align-items: center;
 }
-
-.hero-img img {
-    max-width: 95%;
-}
-
 
 .hero-txt {
     /*Set hero text box inside of hero image*/
-    position: absolute;
-    width: 65%;
-    height: 65%;
-    margin: 0px auto;
-    top: 20%;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    display: inline;
-    background-color: whitesmoke;
+    margin: 75px 205px;
+    background-color: var(--box-bg);
     padding: 10px;
 }
 
+@media (max-width: 1000px) {
+    .hero-txt {
+        margin: 50px 100px;
+    }
+}
+
+@media (max-width: 640px) {
+    .hero-txt {
+        margin: 20px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero-txt {
+        margin: 20px 20px;
+    }
+    .typewriter {
+        font-size: 0%;
+    }
+}
+
+/* introduction text */
 .hero-txt h1 {
     margin-bottom: 15px;
     font-size: 200%;
@@ -108,18 +131,21 @@ a:hover {
 }
 
 .section-header {
-    display: inline-flex;
+    display: flex;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
-    width: 100%;
+}
+
+.section-header div {
+    visibility: hidden;
 }
 
 .section-header h2 {
     font-size: 180%;
     color: var(--header-color);
     border-bottom: 1px solid var(--header-color);
-    margin-left: 43%;
+
 }
 
 .projects .skills .contacts {
@@ -130,7 +156,7 @@ a:hover {
     flex-direction: column;
 }
 
-/* main section headers Projects | Skills | Etc*/
+/* main section headers*/
 .section-header h3 {
     vertical-align: bottom;
     color: var(--accent-color);
@@ -143,6 +169,12 @@ a:hover {
     display: flex;
     padding: 50px 35px;
     margin: 20px;
+}
+
+@media (max-width: 640px) {
+    .project, .project-card-type {
+        display: block;
+    }
 }
 
 .project-card-left {
@@ -200,10 +232,13 @@ a:hover {
     width: 90%;
     margin-bottom: 20px;
     padding-left: 0px;
+    list-style-type: none;
 }
 
-.project-card-type {
-    list-style-type: none;
+@media (max-width: 640px) {
+    .project-card-type {
+        flex-direction: column;
+    }
 }
 
 .project-card-type li {
@@ -223,68 +258,4 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
-}
-
-.social-media ul li {
-}
-
-/* Mobile*/
-@media (min-width: 320px) and (max-width: 500px) {
-    body {
-        min-width: 100%;
-        max-width: 100%;
-    }
-    .nav-bar { 
-        display: flex;
-        flex: wrap;
-        flex-direction: column;
-    }
-    .nav-bar-links {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    .hero-container {
-        margin-bottom: 530px;
-    }
-
-    .hero-txt {
-        position: absolute;
-        width: 65%;
-        height: 80%;
-        margin: 0px auto;
-        top: 30%;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        display: inline;
-        background-color: whitesmoke;
-        padding: 10px;
-    }
-
-    .hero-txt span {
-        background-color: whitesmoke;
-    }
-    
-    .section-header {
-        padding-top: 50px;
-        display: inline-flex;
-        -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-        justify-content: left;
-        width: 100%;
-    }
-
-    .section-header h2 {
-        margin-left: 30%;
-    }
-
-    .section-header a {
-        display: none;
-    }
-
-    .project, .project-card-type {
-        display: block;
-    }
 }
