@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/b906c866da.js" crossorigin="anonymous"></script>
     <title>Brigitte Powers</title>
 </head>
 
@@ -18,7 +19,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#projects">Projects</a></li>
-                    <li><a href="#skills">Skills</a></li>
+                    <!-- <li><a href="#skills">Skills</a></li> -->
                     <li><a href="#contacts">Contact</a></li>
                 </ul>
             </nav>
@@ -46,7 +47,7 @@
             </div>
         </section>
     </header>
-    <main>
+    <main class="">
         <!-- Porfolio works go here-->
         <section id="projects" class="projects">
             <div class=section-header>
@@ -54,34 +55,96 @@
                 <h3><a href=#home>Return to top</a></h3>
             </div>
             <!-- Sections alternate jutified left or right-->
-            <!-- LEFT FACING Template-->
-            <section class="project-card-left">
-                <div>
-                    <img src="" alt=""> 
+            <section class="project-card-left project">
+                <div class="project-mobile-image">
+                    <a href="https://brigittepowers.github.io/css-glowing-cheatsheet/">
+                        <img src="./assets/project1.png" alt=""> 
+                    </a>
                 </div>
                 <div class="project-card-face">
                     <div class="links">
-                        <a href="#" target="_blank" aria-label="Go to Live Link"><i class="fas fa-link" aria-hidden="true"></i></a>
-                        <a href="#" target="_blank" aria-label="Go to Git Repository"><i class="fab fa-github" aria-hidden="true"></i></a>
+                        <a href="https://brigittepowers.github.io/css-glowing-cheatsheet/" target="_blank" aria-label="Go to CSS Glowing Cheatsheet's Live Link">
+                            <i class="fas fa-link" aria-hidden="true">
+                            </i>
+                        </a>
+                        <a href="https://github.com/BrigittePowers/css-glowing-cheatsheet" target="_blank" aria-label="Go to CSS Glowing Cheatsheet's Git Repository">
+                            <i class="fab fa-github" aria-hidden="true">
+                            </i>
+                        </a>
                     </div>
-                </div>
-                <h3 class="project-card-title">Title</h3>
-                <ul class="project-card-type">
-                    <li>HTML</li>
-                    <li>CSS</li>
-                    <li>Etc</li>
-                </ul>
-                <p class=project-card-description>
-                    Description goes here.
-                </p>
+                    <h3 class="project-card-title">CSS Glowing Cheatsheet</h3>
+                    <ul class="project-card-type">
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>Responsive Design</li>
+                        <li>Refactoring</li>
+                    </ul>
+                    <p class=project-card-description>
+                        The goal of this project was to create a fully functional website using basic HTML and CSS. The website experiments with flex displays to showcase a basic website across multiple platforms. Elements are made to respond to user interaction to highlight some of the responsive features of CSS. 
+                    </p>
+                </div>   
             </section>
-            <section class="project-card-right">
-
+            <section class="project-card-right project">
+                <div class="project-card-face">
+                    <div class="links">
+                        <a href="#" target="_blank" aria-label="Go to blank's Live Link">
+                            <i class="fas fa-link" aria-hidden="true">
+                            </i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Go to Git Repository">
+                            <i class="fab fa-github" aria-hidden="true">
+                            </i>
+                        </a>
+                    </div>
+                    <h3 class="project-card-title">Kitty Ipsum</h3>
+                    <ul class="project-card-type">
+                        <li>Meows</li>
+                        <li>Claws</li>
+                        <li>Birdwatching</li>
+                    </ul>
+                    <p class=project-card-description>
+                        Stare at owner accusingly then wink rub whiskers on bare skin act innocent. Kitty poochy. Good morning sunshine..
+                    </p>
+                </div>
+                <div class="project-mobile-image">
+                    <a href="#">
+                        <img src="./assets/placeholder.jpg" alt=""> 
+                    </a>
+                </div>   
+            </section>
+            <section class="project-card-left project">
+                <div class="project-mobile-image">
+                    <a href="#">
+                        <img src="./assets/placeholder.jpg" alt=""> 
+                    </a>
+                </div>  
+                <div class="project-card-face">
+                    <div class="links">
+                        <a href="#" target="_blank" aria-label="Go to blank's Live Link">
+                            <i class="fas fa-link" aria-hidden="true">
+                            </i>
+                        </a>
+                        <a href="#" target="_blank" aria-label="Go to Git Repository">
+                            <i class="fab fa-github" aria-hidden="true">
+                            </i>
+                        </a>
+                    </div>
+                    <h3 class="project-card-title">Kitty Ipsum</h3>
+                    <ul class="project-card-type">
+                        <li>Meows</li>
+                        <li>Claws</li>
+                        <li>Birdwatching</li>
+                    </ul>
+                    <p class=project-card-description>
+                        Stare at owner accusingly then wink rub whiskers on bare skin act innocent. Kitty poochy. Good morning sunshine..
+                    </p>
+                </div>
+                 
             </section>
         </section>
         <!-- Skills go here-->
         <!-- Skills Header-->
-        <section id="skills" class="skills">
+        <!-- <section id="skills" class="skills">
             <div class=section-header>
                 <h2>Skills</h2>
                 <h3><a href=#home>Return to top</a></h3>
@@ -94,7 +157,7 @@
                     <h3>Subtitle Here</h4>
                 </div>
             </section>
-        </section>
+        </section> -->
         <section id="contacts" class="contacts">
             <div class=section-header>
                 <h2 id="contacts">Reach Out</h2>
