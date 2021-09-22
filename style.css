@@ -11,15 +11,16 @@
 
 body  {
     font-family: "Inconsolata", monospace, sans-serif;
-    max-width: 1200px;
     background-image: linear-gradient(var(--background-gradient-light), var(--background-gradient-dark));
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: rgba(0, 0, 0, 0.25);
-    margin: 0px;
 }  
 
 .wrapper {
     padding: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a{
@@ -168,7 +169,8 @@ a:hover {
     height: auto;
     display: flex;
     padding: 50px 35px;
-    margin: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
 }
 
 @media (max-width: 640px) {
@@ -187,10 +189,11 @@ a:hover {
 
 .project-mobile-image {
     margin-right: 30px;
+    margin: auto;
 }
 
 .project-mobile-image img {
-    width: 250px;
+    width: 350px;
     height: auto;
     border-style: solid;
     border-width: 10px;
@@ -199,6 +202,14 @@ a:hover {
 
 .project-card-face {
     padding: 15px;     
+}
+
+.project-card-face-right .links {
+    text-align: right;
+}
+
+.project-card-face-right .project-card-title {
+    text-align: right;
 }
 
 .project-card-face a {
@@ -258,4 +269,9 @@ a:hover {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 0px;
+}
+
+.social-media li {
+    padding-left: 20px;
 }
