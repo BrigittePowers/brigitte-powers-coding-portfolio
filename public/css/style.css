@@ -76,14 +76,13 @@ a:hover {
 }
 
 .hero-img {
-	background-image: url('./assets/bannerimage.jpg');
 	display: flex;
 	align-items: center;
 }
 
 .hero-txt {
 	/*Set hero text box inside of hero image*/
-	margin: 75px 75px;
+	margin: 25px 75px;
 	padding: 10px;
 }
 
@@ -163,8 +162,8 @@ p {
 .project {
 	height: auto;
 	display: flex;
-	padding: 50px 35px;
-	margin-top: 20px;
+	flex-direction: column;
+	padding-bottom: 50px;
 	margin-bottom: 20px;
 }
 
@@ -176,12 +175,14 @@ p {
 }
 
 .project-card {
+	display: none;
 	background-image: linear-gradient(
-		var(--project-bg-color),
-		var(--project-bg-color),
-		var(--header-color)
+		var(--background-gradient-light),
+		var(--background-gradient-dark)
 	);
-	padding: 15px;
+	margin: 25px 75px;
+	padding: 20px;
+	border-radius: 25px;
 }
 
 .project-card-face a {
@@ -210,12 +211,31 @@ p {
 }
 
 .project-card-skill {
+	color: var(--background-gradient-dark);
 	width: 90%;
 	margin-bottom: 20px;
-	padding-left: 0px;
+	padding-left: 20px;
 	font-weight: bold;
 	background-color: #b2bec38e;
-	text-align: center;
+	text-align: left;
+}
+
+.project-card-description {
+	color: var(--background-gradient-dark);
+	background-color: #b2bec38e;
+	border: #b2bec38e;
+	border-width: 100px;
+}
+
+.bubbles {
+	display: flex;
+	padding: 10px;
+}
+
+.pic {
+	border-radius: 50%;
+	height: 300px;
+	width: 300px;
 }
 
 .contact-info,

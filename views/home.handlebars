@@ -1,6 +1,6 @@
 <section class='project'>
 	{{#each projects as |project|}}
-		<div class='project-card' data-id='{{project.id}}' id='project'>
+		<div class='project-card' id='{{project.id}}'>
 			<div class='links'>
 				{{#if project.live_link}}
 					<a
@@ -32,14 +32,16 @@
 			</p>
 		</div>
 	{{/each}}
-	{{#each projects as |project|}}
-		<div class='project-image'>
-			<a href='#project'>
+	<div class='bubbles' id='bubbles'>
+		{{#each projects as |project|}}
+			<a href='#bubbles'>
 				<img
+					class='pic'
+					data-id='{{project.id}}'
 					src='/assets/previews/{{project.image}}'
 					alt='Preview screenshot of {{project.project_name}}'
 				/>
 			</a>
-		</div>
-	{{/each}}
+		{{/each}}
+	</div>
 </section>
