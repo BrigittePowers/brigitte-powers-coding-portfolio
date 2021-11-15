@@ -1,6 +1,6 @@
 <section class='project'>
 	{{#each projects as |project|}}
-		<div class='project-card'>
+		<div class='project-card' data-id='{{project.id}}' id='project'>
 			<div class='links'>
 				{{#if project.live_link}}
 					<a
@@ -24,25 +24,22 @@
 			<h3 class='project-card-title'>
 				{{project.project_name}}
 			</h3>
-			<ul class='project-card-type'>
-				{{!-- {{#with project.skill as |skill|}}
-					{{#each skill.name}}
-						<li>{{this}}</li>
-					{{/each}}
-				{{/with}} --}}
-				{{!-- {{project.skill.get()}} --}}
-			</ul>
+			<div class='project-card-skill'>
+				{{project.skill}}
+			</div>
 			<p class='project-card-description'>
 				{{project.description}}
 			</p>
 		</div>
 	{{/each}}
-	{{!-- <div class='project-mobile-image'>
-		<a href='https://brigittepowers.github.io/wk6-weather-app/'>
-			<img
-				src='./assets/previews/calming-colors-weather-app.png'
-				alt="Preview screenshot of Weather App's live page"
-			/>
-		</a>
-	</div> --}}
+	{{#each projects as |project|}}
+		<div class='project-image'>
+			<a href='#project'>
+				<img
+					src='/assets/previews/{{project.image}}'
+					alt='Preview screenshot of {{project.project_name}}'
+				/>
+			</a>
+		</div>
+	{{/each}}
 </section>

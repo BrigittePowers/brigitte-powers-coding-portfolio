@@ -24,15 +24,8 @@ Project.init(
 			allowNull: false,
 		},
 		skills: {
-			type: DataType.STRING,
+			type: DataTypes.STRING,
 			allowNull: false,
-            defaultValue: '[]'
-			get() {
-				return this.getDataValue('favColors').split(';');
-			},
-			set(val) {
-				this.setDataValue('favColors', val.join(';'));
-			},
 		},
 		description: {
 			type: DataTypes.STRING,
@@ -40,6 +33,9 @@ Project.init(
 		date: {
 			type: DataTypes.TEXT,
 		},
+        image: {
+            type: DataTypes.STRING
+        }
 	},
 	{
 		sequelize,

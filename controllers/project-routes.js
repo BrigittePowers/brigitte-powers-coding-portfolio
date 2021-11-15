@@ -8,10 +8,11 @@ const projects = [
 			'https://brigittepowers.github.io/wk2-project-css-cheatsheet/',
 		repo_link:
 			'https://github.com/BrigittePowers/wk2-project-css-cheatsheet',
-		skill: 'Html;CSS',
+		skill: 'HTML | CSS',
 		description:
 			'A webpage that holds a collection of useful CSS boilerplate as well as demonstrating the boilerplate on the site itself.',
 		date: 'August 2021',
+		image: 'snippet.png',
 	},
 ];
 
