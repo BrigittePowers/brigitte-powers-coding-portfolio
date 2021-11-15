@@ -25,7 +25,8 @@
 				{{project.project_name}}
 			</h3>
 			<div class='project-card-skill'>
-				{{project.skill}}
+				<span>{{project.date}} -- </span>
+				<span>{{project.skill}}</span>
 			</div>
 			<p class='project-card-description'>
 				{{project.description}}
@@ -34,7 +35,7 @@
 	{{/each}}
 	<div class='bubbles' id='bubbles'>
 		{{#each projects as |project|}}
-			<a href='#bubbles'>
+			<a href='#projects'>
 				<img
 					class='pic'
 					data-id='{{project.id}}'
