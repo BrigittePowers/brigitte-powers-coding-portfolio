@@ -1,0 +1,48 @@
+<section class='project'>
+	{{#each projects as |project|}}
+		<div class='project-card'>
+			<div class='links'>
+				{{#if project.live_link}}
+					<a
+						href='{{project.live_link}}/'
+						target='_blank'
+						aria-label='Live Link to {{project.project_name}}'
+					>
+						<i class='fas fa-link' aria-hidden='true'>
+						</i>
+					</a>
+				{{/if}}
+				<a
+					href='{{project.repo_link}}'
+					target='_blank'
+					aria-label='Go to {{project.repo_link}} Git Repository'
+				>
+					<i class='fab fa-github' aria-hidden='true'>
+					</i>
+				</a>
+			</div>
+			<h3 class='project-card-title'>
+				{{project.project_name}}
+			</h3>
+			<ul class='project-card-type'>
+				{{!-- {{#with project.skill as |skill|}}
+					{{#each skill.name}}
+						<li>{{this}}</li>
+					{{/each}}
+				{{/with}} --}}
+				{{!-- {{project.skill.get()}} --}}
+			</ul>
+			<p class='project-card-description'>
+				{{project.description}}
+			</p>
+		</div>
+	{{/each}}
+	{{!-- <div class='project-mobile-image'>
+		<a href='https://brigittepowers.github.io/wk6-weather-app/'>
+			<img
+				src='./assets/previews/calming-colors-weather-app.png'
+				alt="Preview screenshot of Weather App's live page"
+			/>
+		</a>
+	</div> --}}
+</section>
