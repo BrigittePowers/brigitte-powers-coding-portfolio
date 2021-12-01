@@ -2,6 +2,17 @@ const router = require('express').Router();
 
 const projects = [
 	{
+		id: 14,
+		project_name: 'Workout Tracker',
+		live_link: 'https://wk18-workout-tracker.herokuapp.com',
+		repo_link: 'https://github.com/BrigittePowers/wk18-workout-tracker',
+		skill: 'NPM | Express | Mongo Database | Atlas | Heroku | Mongoose | Back-End',
+		description:
+			'A fitness progress app that allows a user to create, edit, or continue a workout and fill it with a variety of exercises. The application also allows the user to view a statistics dashboard that charts their workout duration and resistance goals.',
+		date: 'NOV 2021',
+		image: 'fitness.png',
+	},
+	{
 		id: 13,
 		project_name: 'The Sword',
 		live_link: 'https://endless-ocean-34575.herokuapp.com',
