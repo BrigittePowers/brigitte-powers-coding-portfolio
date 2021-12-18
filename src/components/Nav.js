@@ -30,6 +30,19 @@ const Nav = ({ currentTab, handleTabChange }) => {
 						Projects
 					</a>
 				</li>
+				<li className='nav-item'>
+					<a
+						href='#contact'
+						onClick={() => handleTabChange('Contact')}
+						className={
+							currentTab === 'Contact'
+								? 'nav-link active'
+								: 'nav-link'
+						}
+					>
+						Contact
+					</a>
+				</li>
 			</ul>
 		</div>
 	);

@@ -175,7 +175,6 @@ p {
 }
 
 .project-card {
-	display: none;
 	background-image: linear-gradient(
 		var(--background-gradient-light),
 		var(--background-gradient-dark)
@@ -261,4 +260,10 @@ p {
 
 .social-media li {
 	padding-left: 20px;
+}
+
+.tagline {
+	text-align: center;
+	font-style: italic;
+	font-size: smaller;
 }

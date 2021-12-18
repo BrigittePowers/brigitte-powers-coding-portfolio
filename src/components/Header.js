@@ -3,6 +3,7 @@ import Footer from './Footer';
 import Nav from './Nav';
 import About from './tabs/About';
 import Projects from './tabs/Projects';
+import Contact from './tabs/Contact';
 
 const Header = () => {
 	const [currentTab, setCurrentTab] = useState('About');
@@ -13,6 +14,9 @@ const Header = () => {
 		}
 		if (currentTab === 'Projects') {
 			return <Projects />;
+		}
+		if (currentTab === 'Contact') {
+			return <Contact />;
 		}
 	};
 

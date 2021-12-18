@@ -3,20 +3,7 @@ import React from 'react';
 function Footer() {
 	return (
 		<div id='contacts' className='contacts'>
-			<div className='section-header'>
-				<h2 id='contacts'>Reach Out</h2>
-				<h3>
-					<a href='#home'>Return to top</a>
-				</h3>
-			</div>
 			<div className='contact-info'>
-				<p>
-					<span>210 - 414 -5959</span>
-					<br />
-					<span>powers.brigitte@gmail.com</span>
-					<br />
-					<span>reyhn701@gmail.com</span>
-				</p>
 				<nav className='social-media'>
 					<ul>
 						<li>
@@ -69,6 +56,9 @@ function Footer() {
 						</li>
 					</ul>
 				</nav>
+				<span className='tagline'>
+					Made by Brigitte - Powered by REACT
+				</span>
 			</div>
 		</div>
 	);

@@ -1,7 +1,20 @@
-import React from 'react';
+import React, { useState } from 'react';
+import Data from '../Data';
+import Card from './Card';
 
 const Projects = () => {
-	return <div>Projects Test</div>;
+	
+
+	return (
+		<div>
+			<h1>Projects</h1>
+			{Data.map((item) => {
+                return (
+				<Card item={item}/>
+                )
+			})}
+		</div>
+	);
 };
 
 export default Projects;
