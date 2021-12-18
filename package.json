@@ -1,11 +1,11 @@
 {
-  "name": "brigitte-powers-coding-portfolio",
-  "version": "1.0.0",
+  "name": "portfolio",
+  "version": "3.0.0",
   "description": "coding portfolio",
   "main": "server.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "start": "react-scripts start",
+    "build": "react-scripts build"
   },
   "repository": {
     "type": "git",
@@ -19,10 +19,21 @@
   "bugs": {
     "url": "https://github.com/BrigittePowers/brigitte-powers-coding-portfolio/issues"
   },
-  "homepage": "https://github.com/BrigittePowers/brigitte-powers-coding-portfolio#readme",
   "dependencies": {
-    "animate.css": "^4.1.1",
-    "express": "^4.17.1",
-    "express-handlebars": "^6.0.1"
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-scripts": "^5.0.0"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
   }
 }
