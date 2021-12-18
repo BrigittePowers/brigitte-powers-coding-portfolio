@@ -6,7 +6,7 @@ const Projects = () => {
 	
 
 	return (
-		<div>
+		<div className='tab'>
 			<h1>Projects</h1>
 			{Data.map((item) => {
                 return (

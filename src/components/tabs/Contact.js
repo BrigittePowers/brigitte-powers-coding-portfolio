@@ -2,9 +2,9 @@ import React from 'react';
 
 const Contact = () => {
 	return (
-		<div>
+		<div className='tab'>
 			<h1>Contacts</h1>
-			<p>
+			<p className='contact-info'>
 				<span>210 - 414 -5959</span>
 				<br />
 				<span>powers.brigitte@gmail.com</span>

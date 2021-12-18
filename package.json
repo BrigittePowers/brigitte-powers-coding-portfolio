@@ -1,39 +1,40 @@
 {
-  "name": "portfolio",
-  "version": "3.0.0",
-  "description": "coding portfolio",
-  "main": "server.js",
-  "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/BrigittePowers/brigitte-powers-coding-portfolio.git"
-  },
-  "keywords": [
-    "portfolio"
-  ],
-  "author": "brigitte powers",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/BrigittePowers/brigitte-powers-coding-portfolio/issues"
-  },
-  "dependencies": {
-    "react": "^17.0.2",
-    "react-dom": "^17.0.2",
-    "react-scripts": "^5.0.0"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
-  }
+	"name": "portfolio",
+	"version": "3.0.0",
+	"description": "coding portfolio",
+	"main": "server.js",
+	"scripts": {
+		"start": "react-scripts start",
+		"build": "react-scripts build"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/BrigittePowers/brigitte-powers-coding-portfolio.git"
+	},
+	"homepage": "https://BrigittePowers.github.io/brigitte-powers-coding-portfolio",
+	"keywords": [
+		"portfolio"
+	],
+	"author": "brigitte powers",
+	"license": "ISC",
+	"bugs": {
+		"url": "https://github.com/BrigittePowers/brigitte-powers-coding-portfolio/issues"
+	},
+	"dependencies": {
+		"react": "^17.0.2",
+		"react-dom": "^17.0.2",
+		"react-scripts": "^5.0.0"
+	},
+	"browserslist": {
+		"production": [
+			">0.2%",
+			"not dead",
+			"not op_mini all"
+		],
+		"development": [
+			"last 1 chrome version",
+			"last 1 firefox version",
+			"last 1 safari version"
+		]
+	}
 }

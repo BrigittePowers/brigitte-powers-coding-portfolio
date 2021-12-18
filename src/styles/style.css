@@ -17,6 +17,8 @@ body {
 	-webkit-text-stroke-width: 1px;
 	-webkit-text-stroke-color: rgba(0, 0, 0, 0.25);
 	color: var(--white);
+	height: 100%;
+	width: 100%;
 }
 
 .wrapper {
@@ -241,6 +243,10 @@ p {
 	width: 250px;
 	padding: 7px;
 	flex: 1 0 21%;
+}
+
+.tab {
+	height: 90%;
 }
 
 .contact-info,

@@ -23,7 +23,7 @@ const Header = () => {
 	const handleTabChange = (tab) => setCurrentTab(tab);
 
 	return (
-		<div>
+		<div className='box'>
 			<Nav currentTab={currentTab} handleTabChange={handleTabChange} />
 			{renderTab()}
 			<Footer />
