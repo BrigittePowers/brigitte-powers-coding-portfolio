@@ -1,7 +1,14 @@
 import React from 'react';
+import { useForm } from 'react-hook-form';
 import '../../styles/contact.css';
 
+const onSubmit = (data) => {
+	console.log(data);
+}
+
 const Contact = () => {
+	const { register, handleSubmit, formState: { errors } } = useForm();
+
 	return (
 		<div className='tab'>
 			<p className='contact-info'>
@@ -12,22 +19,33 @@ const Contact = () => {
 				<span>reyhn701@gmail.com</span>
 			</p>
 			<div className='form-wrapper'>
-				<form className='form'>
+				<form onSubmit={handleSubmit(onSubmit)} className='form'>
 					<div className='form-row'>
-						<label>Name:</label>
-						<input type='text' />
+						<label htmlFor='name' placeholder='Name'>Name:</label>
+						<input
+							type='text'
+							{...register('name', {
+								required: true
+							})}
+						/>
 					</div>
 					<div className='form-row'>
-						<label>Email:</label>
-						<input type='text' />
+						<label htmlFor='email'>Email:</label>
+						<input
+							type='email'
+							{...register('email', { required: true })}
+						/>
 					</div>
 					<div className='form-row'>
 						<label>Subject:</label>
-						<input type='text' />
+						<input type='text' {...register('subject')} />
 					</div>
 					<div className='form-row'>
 						<label>Message:</label>
-						<textarea type='text' />
+						<textarea
+							type='text'
+							{...register('message', { required: true })}
+						/>
 					</div>
 					<div className='form-row'>
 						<button type='submit'>Reach Out</button>

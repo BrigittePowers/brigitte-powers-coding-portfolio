@@ -1,15 +1,26 @@
 {
   "files": {
-    "main.css": "/brigitte-powers-coding-portfolio/static/css/main.565649d3.css",
-    "main.js": "/brigitte-powers-coding-portfolio/static/js/main.f86b9c2c.js",
+    "main.css": "/brigitte-powers-coding-portfolio/static/css/main.4f6f4ae7.css",
+    "main.js": "/brigitte-powers-coding-portfolio/static/js/main.d46c2f48.js",
+    "static/media/sits.png": "/brigitte-powers-coding-portfolio/static/media/sits.422af29b94c40d748712.png",
+    "static/media/weather.png": "/brigitte-powers-coding-portfolio/static/media/weather.8aa7fc78a5949b91a0fc.png",
     "static/media/sword.jpg": "/brigitte-powers-coding-portfolio/static/media/sword.343f07484753ad04135a.jpg",
+    "static/media/tracker.jpg": "/brigitte-powers-coding-portfolio/static/media/tracker.8de32254f2ac621e7920.jpg",
+    "static/media/notes.png": "/brigitte-powers-coding-portfolio/static/media/notes.31be07c3d4b71be9d86b.png",
+    "static/media/snippet.png": "/brigitte-powers-coding-portfolio/static/media/snippet.37cd74600dbffe3a860b.png",
+    "static/media/blog.png": "/brigitte-powers-coding-portfolio/static/media/blog.11e4541f10ee687b3ad1.png",
+    "static/media/readme.png": "/brigitte-powers-coding-portfolio/static/media/readme.1b65d20ef14362148681.png",
+    "static/media/commerce.png": "/brigitte-powers-coding-portfolio/static/media/commerce.246410ab1e288caa9d88.png",
+    "static/media/planner.png": "/brigitte-powers-coding-portfolio/static/media/planner.b2a0f8765c62ae3ae1cd.png",
+    "static/media/password.png": "/brigitte-powers-coding-portfolio/static/media/password.757c263c5e87a0025394.png",
+    "static/media/quiz.png": "/brigitte-powers-coding-portfolio/static/media/quiz.3ec8ea903246b0e84f25.png",
     "static/media/fitness.png": "/brigitte-powers-coding-portfolio/static/media/fitness.30d9718d606158a41cdc.png",
     "index.html": "/brigitte-powers-coding-portfolio/index.html",
-    "main.565649d3.css.map": "/brigitte-powers-coding-portfolio/static/css/main.565649d3.css.map",
-    "main.f86b9c2c.js.map": "/brigitte-powers-coding-portfolio/static/js/main.f86b9c2c.js.map"
+    "main.4f6f4ae7.css.map": "/brigitte-powers-coding-portfolio/static/css/main.4f6f4ae7.css.map",
+    "main.d46c2f48.js.map": "/brigitte-powers-coding-portfolio/static/js/main.d46c2f48.js.map"
   },
   "entrypoints": [
-    "static/css/main.565649d3.css",
-    "static/js/main.f86b9c2c.js"
+    "static/css/main.4f6f4ae7.css",
+    "static/js/main.d46c2f48.js"
   ]
 }
