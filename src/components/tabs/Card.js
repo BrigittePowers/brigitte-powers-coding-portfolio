@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../../styles/project.css';
 
 const Card = ({ item }) => {
 	const [display, setDisplay] = useState('block');

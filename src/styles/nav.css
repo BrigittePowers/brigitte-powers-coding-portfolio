@@ -13,6 +13,14 @@
     padding-right: 2%
 }
 
+#nav-item a {
+	display: inline;
+	padding-left: 80px;
+	font-size: 120%;
+	font-weight: bold;
+	color: var(--accent-color);
+}
+
 .nav-link {
     color:aqua;
     font-family: 'Courier New', Courier, monospace;

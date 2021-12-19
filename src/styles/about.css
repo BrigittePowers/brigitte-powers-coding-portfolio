@@ -1,0 +1,50 @@
+.hero-img {
+	display: flex;
+	align-items: center;
+}
+
+.hero-txt {
+	/*Set hero text box inside of hero image*/
+	margin: 25px 75px;
+	padding: 10px;
+}
+
+@media (max-width: 1000px) {
+	.hero-txt {
+		margin: 50px 100px;
+	}
+}
+
+@media (max-width: 640px) {
+	.hero-txt {
+		margin: 20px 20px;
+	}
+}
+
+@media (max-width: 400px) {
+	.hero-txt {
+		margin: 20px 20px;
+	}
+	.typewriter {
+		font-size: 0%;
+	}
+}
+
+/* introduction text */
+.hero-txt div {
+	margin-bottom: 15px;
+	font-size: 200%;
+}
+
+.intro {
+	display: flex;
+}
+
+.type-cursor {
+	padding-left: 10px;
+}
+
+.hero-txt div,
+p {
+	text-align: left;
+}

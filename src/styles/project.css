@@ -1,0 +1,29 @@
+.project {
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	padding-bottom: 50px;
+	margin-bottom: 20px;
+}
+
+@media (max-width: 640px) {
+	.project,
+	.project-card-type {
+		display: block;
+	}
+}
+
+.project-card {
+	background-image: linear-gradient(
+		var(--background-gradient-light),
+		var(--background-gradient-dark)
+	);
+	margin: 25px 75px;
+	padding: 20px;
+	border-radius: 25px;
+}
+
+.project-card-face a {
+	color: black;
+	text-decoration: none;
+}
