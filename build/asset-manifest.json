@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/brigitte-powers-coding-portfolio/static/css/main.565649d3.css",
+    "main.js": "/brigitte-powers-coding-portfolio/static/js/main.f86b9c2c.js",
+    "static/media/sword.jpg": "/brigitte-powers-coding-portfolio/static/media/sword.343f07484753ad04135a.jpg",
+    "static/media/fitness.png": "/brigitte-powers-coding-portfolio/static/media/fitness.30d9718d606158a41cdc.png",
+    "index.html": "/brigitte-powers-coding-portfolio/index.html",
+    "main.565649d3.css.map": "/brigitte-powers-coding-portfolio/static/css/main.565649d3.css.map",
+    "main.f86b9c2c.js.map": "/brigitte-powers-coding-portfolio/static/js/main.f86b9c2c.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.565649d3.css",
+    "static/js/main.f86b9c2c.js"
+  ]
+}

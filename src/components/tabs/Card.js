@@ -1,5 +1,4 @@
 import React, { useState } from 'react';
-import Bubble from './Bubble';
 
 const Card = ({ item }) => {
 	const [display, setDisplay] = useState('block');
@@ -45,7 +44,6 @@ const Card = ({ item }) => {
 					alt='Preview screenshot'
 				/>
 			</div>
-			{/* <Bubble item={item} display={display} setDisplay={setDisplay}/> */}
 		</div>
 	);
 };

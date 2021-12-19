@@ -4,6 +4,8 @@
 	"description": "coding portfolio",
 	"main": "server.js",
 	"scripts": {
+		"predeploy": "npm run build",
+		"deploy": "gh-pages -d build",
 		"start": "react-scripts start",
 		"build": "react-scripts build"
 	},
@@ -21,6 +23,7 @@
 		"url": "https://github.com/BrigittePowers/brigitte-powers-coding-portfolio/issues"
 	},
 	"dependencies": {
+		"gh-pages": "^3.2.3",
 		"react": "^17.0.2",
 		"react-dom": "^17.0.2",
 		"react-scripts": "^5.0.0"
