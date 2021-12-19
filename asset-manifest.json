@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/brigitte-powers-coding-portfolio/static/css/main.4f6f4ae7.css",
-    "main.js": "/brigitte-powers-coding-portfolio/static/js/main.208651d5.js",
+    "main.js": "/brigitte-powers-coding-portfolio/static/js/main.d46c2f48.js",
     "static/media/sits.png": "/brigitte-powers-coding-portfolio/static/media/sits.422af29b94c40d748712.png",
     "static/media/weather.png": "/brigitte-powers-coding-portfolio/static/media/weather.8aa7fc78a5949b91a0fc.png",
     "static/media/sword.jpg": "/brigitte-powers-coding-portfolio/static/media/sword.343f07484753ad04135a.jpg",
@@ -17,10 +17,10 @@
     "static/media/fitness.png": "/brigitte-powers-coding-portfolio/static/media/fitness.30d9718d606158a41cdc.png",
     "index.html": "/brigitte-powers-coding-portfolio/index.html",
     "main.4f6f4ae7.css.map": "/brigitte-powers-coding-portfolio/static/css/main.4f6f4ae7.css.map",
-    "main.208651d5.js.map": "/brigitte-powers-coding-portfolio/static/js/main.208651d5.js.map"
+    "main.d46c2f48.js.map": "/brigitte-powers-coding-portfolio/static/js/main.d46c2f48.js.map"
   },
   "entrypoints": [
     "static/css/main.4f6f4ae7.css",
-    "static/js/main.208651d5.js"
+    "static/js/main.d46c2f48.js"
   ]
 }
