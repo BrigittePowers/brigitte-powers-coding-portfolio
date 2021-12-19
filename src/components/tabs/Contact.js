@@ -4,10 +4,14 @@ import '../../styles/contact.css';
 
 const onSubmit = (data) => {
 	console.log(data);
-}
+};
 
 const Contact = () => {
-	const { register, handleSubmit, formState: { errors } } = useForm();
+	const {
+		register,
+		handleSubmit,
+		formState: { errors },
+	} = useForm();
 
 	return (
 		<div className='tab'>
@@ -21,11 +25,13 @@ const Contact = () => {
 			<div className='form-wrapper'>
 				<form onSubmit={handleSubmit(onSubmit)} className='form'>
 					<div className='form-row'>
-						<label htmlFor='name' placeholder='Name'>Name:</label>
+						<label htmlFor='name' placeholder='Name'>
+							Name:
+						</label>
 						<input
 							type='text'
 							{...register('name', {
-								required: true
+								required: true,
 							})}
 						/>
 					</div>
@@ -33,7 +39,11 @@ const Contact = () => {
 						<label htmlFor='email'>Email:</label>
 						<input
 							type='email'
-							{...register('email', { required: true })}
+							{...register('email', {
+								required: true,
+								pattern:
+									/^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/,
+							})}
 						/>
 					</div>
 					<div className='form-row'>
@@ -51,6 +61,7 @@ const Contact = () => {
 						<button type='submit'>Reach Out</button>
 					</div>
 				</form>
+				{errors.email && <p>Please enter a valid email</p>}
 			</div>
 		</div>
 	);
