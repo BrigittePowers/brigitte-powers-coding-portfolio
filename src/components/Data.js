@@ -12,6 +12,7 @@ import Planner from '../assets/previews/planner.png';
 import Quiz from '../assets/previews/quiz.png';
 import Password from '../assets/previews/password.png';
 import Snippet from '../assets/previews/snippet.png';
+import PoS from '../assets/previews/pos.png';
 
 const Data = [
 	{
@@ -22,7 +23,7 @@ const Data = [
 		skill: 'MERN Stack | Express | Mongo Database | REACT| Front-End | Back-End',
 		description:
 			'Tickt is a point-of-sale system designed with the user in mind. It is light-weight, fast, and easy on the eyes for the employee managing the ordering system. Its versatile and able to be implemented for small business or for a restaurant.',
-		image: pos,
+		image: PoS,
 	},
 	{
 		id: 14,
