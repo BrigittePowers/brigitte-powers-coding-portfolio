@@ -15,6 +15,16 @@ import Snippet from '../assets/previews/snippet.png';
 
 const Data = [
 	{
+		id: 15,
+		project_name: 'Tickt',
+		live_link: 'https://bp-point-of-sale-demo.herokuapp.com/login',
+		repo_link: 'https://github.com/BrigittePowers/point-of-sale-system',
+		skill: 'MERN Stack | Express | Mongo Database | REACT| Front-End | Back-End',
+		description:
+			'Tickt is a point-of-sale system designed with the user in mind. It is light-weight, fast, and easy on the eyes for the employee managing the ordering system. Its versatile and able to be implemented for small business or for a restaurant.',
+		image: pos,
+	},
+	{
 		id: 14,
 		project_name: 'Workout Tracker',
 		live_link: 'https://wk18-workout-tracker.herokuapp.com',
