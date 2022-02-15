@@ -16,6 +16,16 @@ import PoS from '../assets/previews/pos.png';
 
 const Data = [
 	{
+		id: 16,
+		project_name: 'Crop DB',
+		live_link: 'https://github.com/BrigittePowers/crop-java-db',
+		repo_link: 'https://github.com/BrigittePowers/crop-java-db',
+		skill: 'Java | NoSQL | Mongo | Back-End',
+		description:
+			'This is a basic CRUD management system between MongoDB and Java. The goal of the project is to create a simple front end that responds with the database to perform simple operations needed to keep track of crop seasonal rotations.',
+		image: Tracker
+	},
+	{
 		id: 15,
 		project_name: 'Tickt',
 		live_link: 'https://bp-point-of-sale-demo.herokuapp.com/login',
